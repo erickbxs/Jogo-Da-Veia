@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d89595;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  color: rgb(31, 12, 12);
+}
+
+h1 {
+  margin: 0;
+  display: flex;
+}
+
+#score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  font-weight: 500;
+}
+
+#score div {
+  margin-right: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-weight: 300;
+  border: ridge;
+  border-inline: double;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.cell[data-player="X"] {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+
+.cell[data-player="O"] {
+  background-color: rgb(0, 255, 0);
+  color: #fff;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  color: rgb(36, 24, 24);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  table {
+    margin-top: 10px;
+  }
+  .cell {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  #result {
+    font-size: 14px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
