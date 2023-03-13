@@ -1,47 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>JOGO DA VELHA</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>JOGO DA VELHA</h1>
-    </header>
-    <main>
-      <table>
-        <tr class="row">
-          <td class="cell"></td>
-          <td class="cell"></td>
-          <td class="cell"></td>
-        </tr>
-        <tr class="row">
-          <td class="cell"></td>
-          <td class="cell"></td>
-          <td class="cell"></td>
-        </tr>
-        <tr class="row">
-          <td class="cell"></td>
-          <td class="cell"></td>
-          <td class="cell"></td>
-        </tr>
-      </table>
-      <div id="result"></div>
-      <br />
-       <div id="score">
-        <div>
-          X: <span id="x-score">0</span>
-        </div>
-        <div>
-          O: <span id="o-score">0</span>
-        </div>
-      </div>
-      <button id="restart" class="restart">Restart</button>
-    </main>
-    <footer>
-        <p>Copyright &copy; erickbxs 2023</p>
-      </footer>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class='game'></div>
+    <button class="btn" onclick="tic_tac_toe.restart()" title="Restart this game">Restart</button>
+
+    <script src="app.js"></script>
+    <script>
+        tic_tac_toe.init( document.querySelector('.game') );
+        tic_tac_toe.start();
+    </script>
+    
+</body>
 </html>
